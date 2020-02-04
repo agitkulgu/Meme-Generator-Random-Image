@@ -1,11 +1,103 @@
 .App {
   text-align: center;
+  margin: 0 auto;
 }
 
 .App-logo {
-  height: 40vmin;
+  width: 70px;
   pointer-events: none;
+  margin-top:40px;
 }
+
+
+.meme{
+  text-align: center;
+  position: relative;
+  margin:auto;
+}
+.meme > image{
+  width:100%
+}
+.meme > .top{
+  top:0;
+} 
+.meme > .bottom{
+  bottom:0;
+}
+
+.meme > h2 {
+  position: absolute;
+  width:80%;
+  text-align: center;
+  left:50%;
+  transform: translateX(-50%);
+  margin:15px 0;
+  color:white;
+  font-size:28px;
+  text-shadow:
+    2px 2px 0 #000,
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    0 2px 0 #000,
+    2px 0 0 #000,
+    0 -2px 0 #000,
+    -2px 0 0 #000,
+    2px 2px 5px #000;
+
+}
+
+.button {
+  background-color: #1e1e1e; /* black */
+  border: none;
+  color: white;
+  padding: 12px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+.button1 {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.meme-form {
+  text-align: center;
+  padding: 30px;
+  overflow-y: scroll;
+  padding-bottom: 1.25rem;
+}
+.meme-form input {
+  margin: 0 .25rem;
+  min-width: 210px;
+  border: 1px solid #eee;
+  border-left: 3px solid;
+  border-radius: 5px;
+  transition: border-color .5s ease-out;
+  height: 40px;
+}
+.meme-form input:optional {
+  border-left-color: #999;
+}
+.meme-form input:required:valid {
+  border-left-color: palegreen;
+}
+.meme-form input:invalid {
+  border-left-color: salmon;
+}
+.meme-form input:required:focus:valid {
+  background: url("check.svg") no-repeat 95% 50%;
+  background-size: 25px;
+}
+.meme-form input:focus:invalid {
+  background: url("tnt.svg") no-repeat 95% 50%;
+  background-size: 45px;
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

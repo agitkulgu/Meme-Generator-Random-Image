@@ -41,6 +41,7 @@ class MemeGenerator extends Component {
                 type="text"
                 name="topText"
                 placeholder="Top Text"
+                required
                 value={this.state.topText}
                 onChange={this.handleChange}
                 
@@ -49,10 +50,11 @@ class MemeGenerator extends Component {
                 name="bottomText"
                 type="text"
                 placeholder="Bottom Text"
+                required
                 value={this.state.bottomText}
                 onChange={this.handleChange}
             />
-                <button>Resim Getir</button>
+                <button className="button button1">Resim Getir</button>
 
             </form>
             <div className="meme">
