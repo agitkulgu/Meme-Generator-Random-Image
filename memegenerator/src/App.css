@@ -8,12 +8,15 @@
   pointer-events: none;
   margin-top:40px;
 }
-
+img {
+  width:100%;
+}
 
 .meme{
   text-align: center;
   position: relative;
   margin:auto;
+  max-width:600px;
 }
 .meme > image{
   width:100%
@@ -72,7 +75,7 @@
   padding-bottom: 1.25rem;
 }
 .meme-form input {
-  margin: 0 .25rem;
+  margin: .3rem .7rem;
   min-width: 210px;
   border: 1px solid #eee;
   border-left: 3px solid;

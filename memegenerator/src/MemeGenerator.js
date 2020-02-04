@@ -41,6 +41,7 @@ class MemeGenerator extends Component {
                 type="text"
                 name="topText"
                 placeholder="Top Text"
+                className="topText"
                 required
                 value={this.state.topText}
                 onChange={this.handleChange}
